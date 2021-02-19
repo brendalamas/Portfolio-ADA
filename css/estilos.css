@@ -2,10 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    width: 100vw ;
 
-}
 body{
     color: #2e2e31;
 }
@@ -54,7 +51,7 @@ a {
 }
 
 .botonheader{
-    margin-left: 40px;
+    padding-left: 40px;
 }
 
 .boton-efecto{
@@ -249,6 +246,7 @@ a {
 .card:hover{
     border: 1px solid violet;
 }
+
 /* -------------VIOLETA */
 
 .violeta{
@@ -289,8 +287,6 @@ a {
     display: flex;
     flex-direction: column;
     height: 1670px;
-    width: 100%;
-
 }
 .proyecto-1ra{
     display: flex;
@@ -324,7 +320,6 @@ a {
 .proyecto-2da{
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
     height:880px ;
@@ -341,7 +336,7 @@ a {
     justify-content: end;
     align-items: flex-start;
     width: 1350px;
-    margin-left: 120px;
+    padding-left: 120px;
 }
 .icard-proyecto{
     height: 340px ;
@@ -389,7 +384,7 @@ a {
     flex-direction: row;
     height: 1055px;
     width: 100%;
-    background-color: #F6F7FB; 
+    /*background-color: #F6F7FB; */
 }
 
 .card-contactame-escribime{
@@ -481,6 +476,10 @@ a {
     display: flex;
     flex-direction: column;
 }
+.escribime-nombre{
+    flex-grow: 1;
+    position: relative;
+}
 .escribime-nombre-apellido , .email , .mensaje{
     display: flex;
     flex-direction: row;
@@ -524,27 +523,50 @@ a {
     padding: 10px 15px;
     margin-top: 15px;
     font-weight: lighter;
-    /*font-family: 'IBM Plex Serif', serif;*/
 }
 input , textarea{
     font-size: 16px;
     outline: none;
 }
 
-/* VALIDACION */
 
+/* VALIDACION */
+.icon-invalid,
 .icon-valid {
   display: none;
   position: absolute;
   bottom: 20px;
-  right: 60px;
+  left: 180px;
   transform: translateY(50%);
 }
+input:valid:focus{
+  box-shadow: 0px 0px 5px #88c459;
+}
+textarea:valid:focus{
+    box-shadow: 0px 0px 5px #88c459;
+}
+input:invalid:not(:placeholder-shown):focus{
+  box-shadow: 0px 0px 5px #f5414f;
+}
+input:invalid:not(:placeholder-shown){
+  border: 1px solid #f5414f;
+}
+input:valid {
+  border: 1px solid #88c459;
+}
+textarea:valid:focus {
+    border: 1px solid #88c459;
+  }
+.icon-valid {
+    color: #88c459;
+}
+.icon-invalid {
+    color: #f5414f;
+} 
 input:focus , 
-.caja-msj:focus{
+textarea:focus{
     box-shadow: 0px 0px 7px violet;
 }
-
 
 /* BOTON ENVIAR */
 
@@ -570,11 +592,10 @@ input:focus ,
     box-shadow: 0px 0px 7px violet;
 }
 
-
 /* FOOTERRRRRRRRRRRRRRR */
 
 
-.footer{
+footer{
     background-color: violet;
     height: 300px;
     width: 100%;
@@ -635,9 +656,10 @@ input:focus ,
 
 }
 
-/* RESPONSIVE */
+/* RESPONSIVEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 @media (max-width: 550px) {
+    
     header{
         display: none;
     }
@@ -646,21 +668,23 @@ input:focus ,
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 375px;
     } 
     .presentacion{
-        background-color: #E54D26;
+        margin-top: 180px;
+        width: 100%;
     }
+   
     .hola-soy , .mi-nombre , .descripcion{
         text-align: center;
     }
     .mi-nombre{
-        font-size: 40px;
+        font-size: 48px;
+        padding-top: 20px;
+        text-align: center;
     }
     .primer-texto{
         width: 350px;
         height: 350px;
-        background-color: #F0DB4F;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -675,131 +699,186 @@ input:focus ,
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #8338EC;
         margin: 0;
     }
  /* CONOCIMIENTOS*/
     .conocimientos{
-        width: 375px;
+        width: 100%;
+        padding: 7px;
     }
 
     .titulo-conocimiento{
         font-size: 40px;
     }
     .titulo-lorem{
-        font-size: 16px;
+        font-size: 18px;
         display: flex;
         width: 375px;
+        line-height: 1.5;
+        padding: 10px;
     }
     .conocimientos-card{
-        display: grid;
-        background-color: aqua;
-        width: 375px;
-        padding: 0;  
+        display: flex;
+        flex-direction: row;
+        padding: 80px 0px;
     }
     .card{
-        display: grid;
-        height:150px;
+        height: 150px;
         width: 150px;
+        margin: 0 10px;
+    }
+    .caja-top{
+        display: grid;
+    }
+    .titulo-card{
+        font-size: 1em;
+    }
+    .icon-card1 , .icon-card2 , .icon-card3 , .icon-card4 , .icon-card5 , .icon-card6 {
+        font-size: 55px;
+        margin-top: 20px;
+    }
+    
+
+/* VIOLETA*/
+    .parrafo-comillas{
+        font-size: 16px;
+        width: 340px;    
+    }
+    
+/*PROYECTOS*/
+    .proyecto{
+        width: 100%;
+    }
+    .proyecto-1ra{
+        width: 100%;
+        text-align: center;
+    }
+    .titulo-proyecto{    
+        padding-top: 100px;
+    }
+    .p-proyecto{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .proyecto-2da {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        padding-top: 0px;
 
     }
-/*
-.conocimientos{
-    width: 1350px;
-    height: 985px;
-    background-color: #F6F7FB;
-    display: flex;
-    flex-direction: column;
-}
-.conocimientos-titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    text-align: center;
+    .card-proyecto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
 
-}
-.titulo-conocimiento{
-    font-size: 45px;
-    font-weight: 900; 
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 43px;
-    margin-top: 100px;
-    color: black;
-}
-.titulo-lorem{
-    width: 400px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.4;
-}
-.conocimientos-card{
-    display: flex;
-    flex-direction: column;
-    height: 635px;
-    padding-left: 250px ;
-    padding-right:250px ;
-}
-.caja-top{
-    display: flex;
-    flex-direction: row;
-}
-.caja-bottom{
-    display: flex;
-    flex-direction: row;
-}
-.card{
-    height:240px;
-    width: 250px;
-    border-radius: 10px;
-    margin: 25px;
-    border: 1px solid #dddfe5;
-    color: #2e2e31;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-}
-.icon-card1{
-    font-size: 85px;
-    color: #E54D26;
-    margin-bottom: 10px;
-}
-.titulo-card{
-    font-size: 1.25em;
-    font-weight: 700;
-    padding-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    }
+    .icard-proyecto{
+        height: 290px ;
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0px 0px 0px;
+    }
+    .card-imagen-proyecto{
+        height: 200px ;
+        width: 220px;
+    }
+    .img-proyecto{
+        height: 80%;
+        margin-left: 90px;
+        
+    }
+    .ultima-card-proyecto{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        padding-left: 9px;
+        height: 290px ;
+        width: 99%;
+        margin: 950px 0 0 0;
+    }
+    
+    /*contactame y escribime*/
+    .contactame-escribime{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-contactame-escribime{
+        width: 100%;
+        margin:880px 0 0 0;
+        display: grid;
+        flex-direction: column;
+        border: none;
+        padding-top: 5px;
+    }
+    .card-izq-contactame{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        height: 550px;
+        width: 100%;
 
-}
-.icon-card2{
-    font-size: 85px;
-    color: #3D8FC6;
-    margin-bottom: 10px;
-}
-.icon-card3{
-    font-size: 85px;
-    color: #CC6699;
-    margin-bottom: 10px;
-}
-.icon-card4{
-    font-size: 85px;
-    color: #F0DB4F;
-    margin-bottom: 10px;
-}
-.icon-card5{
-    font-size: 85px;
-    color: #64DBFB;
-    margin-bottom: 10px;
-}
-.icon-card6{
-    font-size: 85px;
-    color: #F34F29;
-    margin-bottom: 10px;
-}
-.card:hover{
-    border: 1px solid violet;
-}
-*/
+    }
+    .titulo-contactame-escribime{
+        font-size: 40px;
+    }
+    .titulo-lorem-flex{
+        height: 240px;
+        width: 100%;
+    }
+    .lorem-card-contactame{
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.4;
+        padding-top: 35px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-padding{
+        margin-top: 25px;
+    }
+    .card-der-escribime{
+        width: 100%;
+    }
+    .escribir , .escribime-formulario{
+        margin: 0;
+    }
+    .escribime-formulario{
+        margin-left: 20px;
+    }
+    .escribir{
+        padding-left: 20px;
+    }
+    .escribime-nombre-apellido{
+        display: grid;
+    }
+    .escribime-apellido {
+        padding-top: 25px;
+    }
+    .caja-nombre-apellido , .caja-email , .caja-msj{
+        width: 320px;
+    }
+    .boton-enviar{
+        margin-left: 20px;
+    }
+
+ /* footer */
+    footer{
+        width: 360px;
+        height: 250px;
+        margin-top: 1150px;
+    }
+    .footer-proyectos{
+        display: none;
+    }
+    .footer-icons{
+        padding-top: 80px;
+        padding-left: 15px;
+    }
 }

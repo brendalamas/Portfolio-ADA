@@ -31,7 +31,7 @@
         <a name="section-hola"> </a>
         <div class="primer-texto">
             <p class="hola-soy">¡Hola! Soy</p>
-            <div class="mi-nombre">Brenda Lamas</div>
+            <div class="mi-nombre">Brenda A. Lamas</div>
             <p class="descripcion">Desarrolladora Frontend, estudiante de TUMN, y fan del café</p>
             <a class="boton-lo-que-hago" href="#section-proyecto"> LO QUE HAGO </a>            
         </div>
@@ -96,7 +96,7 @@
     </section>
 
 
-    <!-- Tercer section PROYECTOS -->
+     <!--Tercer section PROYECTOS -->
 
     <section class="proyecto">
         <a name="section-proyecto"></a>
@@ -104,7 +104,7 @@
             <h1 class="titulo-proyecto"> Mis proyectos </h1>
             <p class="p-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? </p>
         </div>
-        <!-- CARDS IMAGENES PROYECTO-->
+          <!--CARDS IMAGENES PROYECTO -->
         <div class="proyecto-2da">
 
             <div class="card-proyecto">
@@ -160,22 +160,22 @@
         
     </section>
     
-    <!-- Cuarta section CONTACTAME Y ESCRIBIME  -->
+   <!--Cuarta section CONTACTAME Y ESCRIBIME   --> 
 
     <section class="contactame-escribime">
         <a name="section-contacto"> </a>
         <div class="card-contactame-escribime">
 
-            <!-- CARD IZQUIERDAAA-->
+             <!-- CARD IZQUIERDAAA -->
             <div class="card-izq-contactame">
 
-                <!-- PRIMERA PARTE TITULO -->
+                <!--PRIMERA PARTE TITULO  --> 
                 <div class="titulo-lorem-flex">
                     <h1 class="titulo-contactame-escribime"> Contactame </h1>
                     <p class="lorem-card-contactame"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
                 </div>
 
-                <!-- ICONOS-->
+                <!--ICONOS --> 
                 <div class="card-icon">
                     <div class="card-padding">
                         <a href="#section-hola" class="card-user">
@@ -202,42 +202,85 @@
                 </div>
             </div>
 
-        <!-- CARD DERECHAAAA-->
+       <!--CARD DERECHAAAA -->  
 
             <div class="card-der-escribime">
                 <div >
-                    <h1 class="titulo-contactame-escribime"> Escribime </h1>
+                    <h1 class="titulo-contactame-escribime escribir"> Escribime </h1>
                 </div>
-                <div class="escribime-formulario">
+<!--
+        <form class="contact-form">
+            <div class="input-name-wrapper">
+                <div class="form-control">
+                  <label for="firstname">Nombre *</label>
+                  <input type="text" name="Nombre" id="firtsname"
+                         class="input-firtsname input-control" placeholder="p. ej.: Ada" required/>
+                  <i class="far fa-times-circle icon-invalid"></i>
+                  <i class="far fa-check-circle icon-valid"></i>
+                </div>
+                <div class="form-control">
+                  <label for="lastname">Apellido *</label>
+                  <input type="text" name="Apellido" id="lastname"
+                         class="input-lastname input-control" placeholder="p. ej.: Lovelace" required/>
+                  <i class="far fa-times-circle icon-invalid"></i>
+                  <i class="far fa-check-circle icon-valid"></i>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="email">Email *</label>
+                <input type="email" name="Email" id="email"
+                       class="input-control" placeholder="p. ej.: ada.lovelace@gmail.com" required/>
+                <i class="far fa-times-circle icon-invalid"></i>
+                <i class="far fa-check-circle icon-valid"></i>
+              </div>
+              <div class="form-control">
+                <label for="message">Mensaje *</label>
+                <textarea name="Mensaje" id="message" cols="30" rows="10" class="input-control"
+                  placeholder="Escriba un mensaje aquí" required></textarea>
+                <i class="far fa-times-circle icon-invalid"></i>
+                <i class="far fa-check-circle icon-valid"></i>
+              </div>
+              <button type="submit" class="contact-send-btn button">
+                Enviar
+              </button>
+            </form>
+-->
+                <form class="escribime-formulario">
                     <div class="escribime-nombre-apellido">
                         <div class="escribime-nombre">
-                            <label> Nombre * </label>
-                            <input type="text" name="Nombre" 
-                            class="caja-nombre-apellido" 
-                            placeholder="p. ej.: Brenda" required="">                        
+                            <label for="nombre"> Nombre * </label>
+                            <input type="text" name="nombre" id="nombre"
+                            class="caja-nombre-apellido"
+                            placeholder="p. ej.: Brenda" required>
+                            <i class="far fa-check-circle icon-valid"></i>
                         </div>
                         <div class="escribime-apellido"> 
-                            <label> Apellido *</label>
-                            <input type="text" name="Apellido" 
+                            <label for="apellido"> Apellido *</label>
+                            <input type="text" name="apellido" id="apellido"
                             class="caja-nombre-apellido" 
-                            placeholder="p. ej.: Lamas" required="">
+                            placeholder="p. ej.: Lamas" required>
+                            <i class="far fa-check-circle icon-valid"></i>
                         </div>
                     </div>
                     <div class="email"> 
-                        <label> Email *</label> 
-                        <input type="text" name="Email" 
+                        <label for="email"> Email *</label> 
+                        <input type="email" name="Email" id="email"
                             class="caja-email" 
-                            placeholder="p. ej.: brenn.lamas@gmail.com" required="">
+                            placeholder="p. ej.: brenn.lamas@gmail.com" required>
+                            <i class="far fa-times-circle icon-invalid"></i>
+                            <i class="far fa-check-circle icon-valid"></i>
+
                     </div>
                     <div class="mensaje">
-                        <label> Mensaje *</label>
-                        <p> <textarea class="caja-msj"
-                        name="Mensaje"
-                        placeholder="Escriba un mensaje aquí" required="">
-                        </textarea></p>
+                        <label for="mensaje"> Mensaje *</label>
+                        <textarea  name="mensaje" id="mensaje" cols="30" rows="10"
+                            class="caja-msj" placeholder="Escriba un mensaje aquí" required>
+                        </textarea>
+                        
+                        <i class="far fa-check-circle icon-valid"></i>
                     </div>
               
-                </div>
+                </form>
                 <a href="#" class="boton-enviar">
                     Enviar
                 </a>
@@ -246,7 +289,7 @@
     </section>
 
     <!-- FOOTER  -->
-    <section class="footer">
+    <footer>
         <div class="footer-proyectos">
             <a href="#section-hola" class="footer-proyectos-margin"> HOLA </a>
             <a href="#section-conocimiento" class="footer-proyectos-margin"> CONOCIMIENTOS</a>
@@ -260,6 +303,6 @@
             <a href="#section-hola" class="footer-icon-radius"><i class="fas fa-envelope"></i> </a>
         </div>
         <div class="footer-love"> Hecho con ❤️ por Brenda </div>
-    </section>
+    </footer>
 </body>
 </html>
