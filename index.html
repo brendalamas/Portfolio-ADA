@@ -148,16 +148,16 @@
                     <div class="titulo-card-imagen-proyecto"> Todo app</div>
                 </a>
             </div>
-        </div>
-        <div href="./index.html" target="_blank" class="ultima-card-proyecto">
-            <a href="./index.html" target="_blank" class="icard-proyecto ">
-                <div class="card-imagen-proyecto">
-                    <img  class="img-proyecto" src="./imagen/undraw_video_streaming_yyld.png">
-                </div>
-                <div class="titulo-card-imagen-proyecto"> Buscador de películas</div>
-            </a>
-        </div>
         
+            <div class="card-proyecto">
+                <a href="./index.html" target="_blank" class="icard-proyecto ">
+                    <div class="card-imagen-proyecto">
+                        <img  class="img-proyecto" src="./imagen/undraw_video_streaming_yyld.png">
+                    </div>
+                    <div class="titulo-card-imagen-proyecto"> Buscador de películas</div>
+                </a>
+            </div>
+        </div>
     </section>
     
    <!--Cuarta section CONTACTAME Y ESCRIBIME   --> 
@@ -202,84 +202,49 @@
                 </div>
             </div>
 
-       <!--CARD DERECHAAAA -->  
-
+       <!--CARD DERECHAAAA FORMULARIOOOO-->  
             <div class="card-der-escribime">
                 <div >
                     <h1 class="titulo-contactame-escribime escribir"> Escribime </h1>
                 </div>
-<!--
-        <form class="contact-form">
-            <div class="input-name-wrapper">
-                <div class="form-control">
-                  <label for="firstname">Nombre *</label>
-                  <input type="text" name="Nombre" id="firtsname"
-                         class="input-firtsname input-control" placeholder="p. ej.: Ada" required/>
-                  <i class="far fa-times-circle icon-invalid"></i>
-                  <i class="far fa-check-circle icon-valid"></i>
-                </div>
-                <div class="form-control">
-                  <label for="lastname">Apellido *</label>
-                  <input type="text" name="Apellido" id="lastname"
-                         class="input-lastname input-control" placeholder="p. ej.: Lovelace" required/>
-                  <i class="far fa-times-circle icon-invalid"></i>
-                  <i class="far fa-check-circle icon-valid"></i>
-                </div>
-            </div>
-            <div class="form-control">
-                <label for="email">Email *</label>
-                <input type="email" name="Email" id="email"
-                       class="input-control" placeholder="p. ej.: ada.lovelace@gmail.com" required/>
-                <i class="far fa-times-circle icon-invalid"></i>
-                <i class="far fa-check-circle icon-valid"></i>
-              </div>
-              <div class="form-control">
-                <label for="message">Mensaje *</label>
-                <textarea name="Mensaje" id="message" cols="30" rows="10" class="input-control"
-                  placeholder="Escriba un mensaje aquí" required></textarea>
-                <i class="far fa-times-circle icon-invalid"></i>
-                <i class="far fa-check-circle icon-valid"></i>
-              </div>
-              <button type="submit" class="contact-send-btn button">
-                Enviar
-              </button>
-            </form>
--->
                 <form class="escribime-formulario">
                     <div class="escribime-nombre-apellido">
                         <div class="escribime-nombre">
                             <label for="nombre"> Nombre * </label>
                             <input type="text" name="nombre" id="nombre"
                             class="caja-nombre-apellido"
-                            placeholder="p. ej.: Brenda" required>
-                            <i class="far fa-check-circle icon-valid"></i>
+                            placeholder="p. ej.: Brenda" 
+                            autocomplete="off"
+                            enable
+                            required>
                         </div>
                         <div class="escribime-apellido"> 
                             <label for="apellido"> Apellido *</label>
                             <input type="text" name="apellido" id="apellido"
                             class="caja-nombre-apellido" 
-                            placeholder="p. ej.: Lamas" required>
-                            <i class="far fa-check-circle icon-valid"></i>
+                            placeholder="p. ej.: Lamas"
+                            autocomplete="off"
+                            enable 
+                            required>
                         </div>
                     </div>
                     <div class="email"> 
                         <label for="email"> Email *</label> 
                         <input type="email" name="Email" id="email"
                             class="caja-email" 
-                            placeholder="p. ej.: brenn.lamas@gmail.com" required>
-                            <i class="far fa-times-circle icon-invalid"></i>
-                            <i class="far fa-check-circle icon-valid"></i>
-
+                            placeholder="p. ej.: brenn.lamas@gmail.com"
+                            autocomplete="off" 
+                            required>
                     </div>
                     <div class="mensaje">
                         <label for="mensaje"> Mensaje *</label>
-                        <textarea  name="mensaje" id="mensaje" cols="30" rows="10"
-                            class="caja-msj" placeholder="Escriba un mensaje aquí" required>
-                        </textarea>
-                        
-                        <i class="far fa-check-circle icon-valid"></i>
+                        <textarea  
+                             name="mensaje" id="mensaje" cols="30" rows="10"
+                             placeholder="Escriba un mensaje aquí" 
+                             class="caja-msj"
+                             required
+                        ></textarea>
                     </div>
-              
                 </form>
                 <a href="#" class="boton-enviar">
                     Enviar

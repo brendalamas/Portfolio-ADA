@@ -252,7 +252,7 @@ a {
 .violeta{
     height: 570px;
     width: 100%;
-    background-color:#8338EC ;
+    background-color:violet ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,7 +293,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:300px ;
+    height: 400px;
     width: 1350px;
     
 }
@@ -305,7 +305,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 60px;
     color: black;
 }
 .p-proyecto{
@@ -330,14 +330,7 @@ a {
     display: flex;
     flex-direction: row;
 }
-.ultima-card-proyecto{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-start;
-    width: 1350px;
-    padding-left: 120px;
-}
+
 .icard-proyecto{
     height: 340px ;
     width: 340px;
@@ -384,7 +377,7 @@ a {
     flex-direction: row;
     height: 1055px;
     width: 100%;
-    /*background-color: #F6F7FB; */
+    background-color: #F6F7FB; 
 }
 
 .card-contactame-escribime{
@@ -476,22 +469,19 @@ a {
     display: flex;
     flex-direction: column;
 }
-.escribime-nombre{
-    flex-grow: 1;
-    position: relative;
-}
 .escribime-nombre-apellido , .email , .mensaje{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
+
 .email , .mensaje{
     margin-top: 22px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .caja-nombre-apellido{
@@ -529,45 +519,28 @@ input , textarea{
     outline: none;
 }
 
-
 /* VALIDACION */
-.icon-invalid,
-.icon-valid {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  left: 180px;
-  transform: translateY(50%);
+input:focus , textarea:focus{
+    box-shadow: 0px 0px 7px violet;
 }
-input:valid:focus{
+input:valid:focus , textarea:valid:focus{
   box-shadow: 0px 0px 5px #88c459;
 }
-textarea:valid:focus{
+input:valid , textarea:valid {
+    border: 1px solid #88c459;
+}
+input:focus , textarea:focus {
+    box-shadow: 0px 0px 7px violet;
+}
+input:valid:focus , textarea:valid:focus{
     box-shadow: 0px 0px 5px #88c459;
 }
 input:invalid:not(:placeholder-shown):focus{
-  box-shadow: 0px 0px 5px #f5414f;
+    box-shadow: 0px 0px 5px #f5414f;
 }
 input:invalid:not(:placeholder-shown){
-  border: 1px solid #f5414f;
+    border: 1px solid #f5414f;
 }
-input:valid {
-  border: 1px solid #88c459;
-}
-textarea:valid:focus {
-    border: 1px solid #88c459;
-  }
-.icon-valid {
-    color: #88c459;
-}
-.icon-invalid {
-    color: #f5414f;
-} 
-input:focus , 
-textarea:focus{
-    box-shadow: 0px 0px 7px violet;
-}
-
 /* BOTON ENVIAR */
 
 .boton-enviar{
