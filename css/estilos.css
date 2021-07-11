@@ -17,6 +17,11 @@ header{
     box-shadow: 0 0 29px 0 rgba(102, 47, 47, 0.25);
     background-color: white;
     display: flex;
+    /* Aqui estas diciendo que los elementos de tu barra de navegacion deberian estar alineados al centro
+    Sin embargo, en el estilo del ul del header, lo acomodas a la izquierda con un margen enorme
+    eso te va a traer problemas en el responsive
+    Mejor sacar ese margin-left de ul y poner aqui un justify-content: flex-end
+    No uses margin para acomodar las cosas, su función es espaciar */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -32,6 +37,8 @@ ul{
 li{
     font-size: 17px;
     font-weight: 300;
+    /* Si esta tipografia estuviera en el body, no deberías repetirla a cada rato
+    La tipografia se hereda */
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -42,11 +49,13 @@ a {
     cursor: pointer;
 }
 .boton{
+    /* ojo con el contraste en esta combinacion */
     background-color: violet;
     color: white;
     border-radius: 30px;
     margin-left: 60px;
     padding: 10px 25px;
+    /* este opacity no cumple ninguna funcion */
     opacity: 1;
 }
 
@@ -60,6 +69,7 @@ a {
 }
 .boton-efecto:hover {  
     color: violet;  
+    /* innecesario */
     text-decoration: none;
 
 }  
@@ -84,6 +94,7 @@ a {
 .presentacion{
     height: 750px;
     display: flex;
+    /* no es necesario aclarar esto, ya que es el estilo por defecto en flex */
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
 }
@@ -94,6 +105,7 @@ a {
     height: 750px;
     padding-top: 330px;
     padding-left: 120px;
+    /* no es necesario aclarar esto, es un estilo por defecto */
     display: block;
 }
 .hola-soy{
@@ -112,6 +124,8 @@ a {
 }
 
 .boton-lo-que-hago{
+    /* lo que hago y contacto son tan similares que quiza deberian ser la misma clase
+    flex es innecesario aqui */
     display: flex;
     margin-top: 40px;
     padding-top: 15px;
@@ -125,6 +139,7 @@ a {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    /* innecesario */
     text-decoration: none;
 }
 .imagen-der{
@@ -150,6 +165,7 @@ a {
 /* -------------CONOCIMIENTOS */
 
 .conocimientos{
+    /* innecesario este width*/
     width: 100%;
     height: 985px;
     background-color: #F6F7FB;
@@ -182,15 +198,22 @@ a {
     display: flex;
     flex-direction: column;
     height: 635px;
+
+    /* este padding excesivo hace que tus tarjetas se deformen en pantallas mas chicas
+    para centrar, usa flex. padding y margin son para dar espaciado */
     padding-left: 250px ;
     padding-right:250px ;
 }
+
+/* estos dos elementos tienen el mismo estilo: por que tienen clases distintas? */
 .caja-top{
     display: flex;
+    /* innecesario */
     flex-direction: row;
 }
 .caja-bottom{
     display: flex;
+    /* innecesario */
     flex-direction: row;
 }
 .card{
@@ -218,6 +241,7 @@ a {
     font-family: 'Montserrat', sans-serif;
 
 }
+/* pensa en mejorar este codigo para que no quede tan repetitivo */
 .icon-card2{
     font-size: 85px;
     color: #3D8FC6;
@@ -297,6 +321,8 @@ a {
     width: 1350px;
     
 }
+
+/* pensa en como hacer que no quede tan repetitivo el css de esta seccion */
 .titulo-proyecto{    
     font-size: 44px;
     font-weight: 900;
@@ -469,6 +495,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+/* por que tienen clases distintas si su estilo es el mismo? */
 .escribime-nombre-apellido , .email , .mensaje{
     display: flex;
     flex-direction: row;
@@ -483,6 +510,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
 }
+
+/* muy repetitivo el codigo en los siguientres tres estilos */
 
 .caja-nombre-apellido{
     border-radius: 20px;
