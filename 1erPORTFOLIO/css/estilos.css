@@ -1,0 +1,857 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #2e2e31;
+}
+
+/* -------------HEADER */
+
+
+header{
+    height: 90px;
+    width: 100vw;
+    color: black;
+    box-shadow: 0 0 29px 0 rgba(102, 47, 47, 0.25);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding: 20px 70px;
+    margin-left: 470px;
+    
+}
+
+li{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.boton{
+    background-color: violet;
+    color: white;
+    border-radius: 30px;
+    margin-left: 60px;
+    padding: 10px 25px;
+    opacity: 1;
+}
+
+.botonheader{
+    padding-left: 40px;
+}
+
+.boton-efecto{
+    background-color: white;
+    padding: 10px 5px;
+}
+.boton-efecto:hover {  
+    color: violet;  
+    text-decoration: none;
+
+}  
+.boton-efecto:focus{
+    box-shadow: 0px 0px 7px violet;
+    border-radius: 80px;
+
+}
+.boton:focus{
+    box-shadow: 0px 0px 7px violet;
+    border-radius: 80px;
+}
+
+.boton:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+/* -------------HOLA */
+
+
+.presentacion{
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+.primer-texto{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 750px;
+    padding-top: 330px;
+    padding-left: 120px;
+    display: block;
+}
+.hola-soy{
+    font-size: 30px;
+    font-weight: 800;
+}
+.mi-nombre{
+    font-size: 60px;
+    font-weight: 900;
+    color: violet;
+}
+.descripcion{
+    font-size: 16px;
+    color: grey;
+    padding-top: 25px;
+}
+
+.boton-lo-que-hago{
+    display: flex;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    border-radius: 100px;
+    background-color: violet;
+    width: 180px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.imagen-der{
+    margin-top: 15px;
+    width: 600px;
+    height: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-bren{
+    height: 95%;
+    width: 95%;
+}
+.boton-lo-que-hago:focus{
+    box-shadow: 0px 0px 7px violet;
+    border-radius: 80px;
+}
+.boton-lo-que-hago:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+}
+/* -------------CONOCIMIENTOS */
+
+.conocimientos{
+    width: 100%;
+    height: 985px;
+    background-color: #F6F7FB;
+    display: flex;
+    flex-direction: column;
+}
+.conocimientos-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    text-align: center;
+
+}
+.titulo-conocimiento{
+    font-size: 45px;
+    font-weight: 900; 
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 43px;
+    margin-top: 100px;
+    color: black;
+}
+.titulo-lorem{
+    width: 400px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+}
+.conocimientos-card{
+    display: flex;
+    flex-direction: column;
+    height: 635px;
+    padding-left: 250px ;
+    padding-right:250px ;
+}
+.caja-top{
+    display: flex;
+    flex-direction: row;
+}
+.caja-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    height:240px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 25px;
+    border: 1px solid #dddfe5;
+    color: #2e2e31;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.icon-card1{
+    font-size: 85px;
+    color: #E54D26;
+    margin-bottom: 10px;
+}
+.titulo-card{
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.icon-card2{
+    font-size: 85px;
+    color: #3D8FC6;
+    margin-bottom: 10px;
+}
+.icon-card3{
+    font-size: 85px;
+    color: #CC6699;
+    margin-bottom: 10px;
+}
+.icon-card4{
+    font-size: 85px;
+    color: #F0DB4F;
+    margin-bottom: 10px;
+}
+.icon-card5{
+    font-size: 85px;
+    color: #64DBFB;
+    margin-bottom: 10px;
+}
+.icon-card6{
+    font-size: 85px;
+    color: #F34F29;
+    margin-bottom: 10px;
+}
+.card:hover{
+    border: 1px solid violet;
+}
+
+/* -------------VIOLETA */
+
+.violeta{
+    height: 570px;
+    width: 100%;
+    background-color:violet ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comillas{
+    font-size: 85px;
+    color: white;
+    
+}
+.parrafo-comillas{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 750px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 0;
+
+}
+.titulo-comillas{
+    color: white;
+    font-size: 27px;
+    font-weight: 900px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* -------------PROYECTOS */
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    height: 1670px;
+}
+.proyecto-1ra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 1350px;
+    
+}
+.titulo-proyecto{    
+    font-size: 44px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    color: black;
+}
+.p-proyecto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 400px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.4;
+    color: black;
+}
+.proyecto-2da{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:880px ;
+    width: 1350px;
+    padding-top: 115px;
+}
+.card-proyecto{
+    display: flex;
+    flex-direction: row;
+}
+
+.icard-proyecto{
+    height: 340px ;
+    width: 340px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card-imagen-proyecto{
+    height: 280px ;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-proyecto{
+    height: 80%;
+    width: 80%;
+    
+}
+.titulo-card-imagen-proyecto{
+    height: 60px ;
+    width: 340px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.icard-proyecto:hover{
+    border: 1px solid violet;
+}
+.icard-proyecto:focus{
+    box-shadow: 0px 0px 7px red;
+    border-radius: 10px;
+}
+
+/* CUARTA SECCION CONTACTAME Y ESCRIBIME */ 
+
+.contactame-escribime{
+    display: flex;
+    flex-direction: row;
+    height: 1055px;
+    width: 100%;
+    background-color: #F6F7FB; 
+}
+
+.card-contactame-escribime{
+    height: 725px;
+    width: 1100px;
+    border: 1px solid black;
+    margin-left: 125px ;
+    margin-right: 125px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    padding-top: 85px;
+
+}
+.card-izq-contactame{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+
+}
+.titulo-lorem-flex{
+    width: 490px;
+    height: 240px;
+}
+.titulo-contactame-escribime{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.lorem-card-contactame{
+    font-size: 16px;
+    width: 400px;
+    line-height: 1.4;
+    padding-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*ICONOS*/
+.card-icon{
+    width: 490px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.card-user{
+    padding: 10px;
+    border-radius: 100px;
+}
+.icon-radius{
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: violet;
+}
+.card-padding{
+    margin-top: 15px;
+}
+.card-user:hover .user-user{
+    color: violet;
+}
+.card-user:hover .icon-radius{
+    background-color: violet;
+}
+.card-user:hover .icon-radius {
+    color: white;
+}
+.card-user:focus{
+    background-color: white;
+    box-shadow: 0 0 29px 0 violet;
+}
+
+ /*   CARD DERECHA -ESCRIBIME- */ 
+.card-der-escribime{
+    width: 550px;
+}
+
+.escribime-formulario{
+    padding-top: 35px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.escribime-nombre-apellido , .email , .mensaje{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.email , .mensaje{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.caja-nombre-apellido{
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    width: 220px;
+    height: 40px;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+.caja-email{
+    width: 490px;
+    height: 40px;
+    background-color: #f6f7fb;
+    border-radius: 20px;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+.caja-msj{
+    width: 490px;
+    height: 170px;
+    background-color: #f6f7fb;
+    border-radius: 20px;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+input , textarea{
+    font-size: 16px;
+    outline: none;
+}
+
+/* VALIDACION */
+input:focus , textarea:focus{
+    box-shadow: 0px 0px 7px violet;
+}
+input:valid:focus , textarea:valid:focus{
+  box-shadow: 0px 0px 5px #88c459;
+}
+input:valid , textarea:valid {
+    border: 1px solid #88c459;
+}
+input:focus , textarea:focus {
+    box-shadow: 0px 0px 7px violet;
+}
+input:valid:focus , textarea:valid:focus{
+    box-shadow: 0px 0px 5px #88c459;
+}
+input:invalid:not(:placeholder-shown):focus{
+    box-shadow: 0px 0px 5px #f5414f;
+}
+input:invalid:not(:placeholder-shown){
+    border: 1px solid #f5414f;
+}
+/* BOTON ENVIAR */
+
+.boton-enviar{
+    background-color: violet;
+    color: white;
+    height: 50px;
+    width: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    opacity: 1;
+}
+.boton-enviar:hover{
+    opacity: 0.9;
+
+}
+.boton-enviar:focus{
+    box-shadow: 0px 0px 7px violet;
+}
+
+/* FOOTERRRRRRRRRRRRRRR */
+
+
+footer{
+    background-color: violet;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 80px;
+    font-size: 16px;
+}
+.footer-proyectos-margin{
+    margin-right: 20px;
+    color: white;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 45px;
+}
+.footer-icon-radius{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: violet;
+    margin-right: 20px;
+}
+
+.footer-love{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 45px;
+    font-size: 16px;
+}
+.footer-icon-radius:hover{
+    background-color: violet;
+    border: 1px solid white;
+    color: white;
+}
+.footer-icon-radius:focus{
+    box-shadow: 0px 0px 7px white;
+}
+.footer-proyectos-margin:focus{
+    box-shadow: 0px 0px 7px white;
+
+}
+
+/* RESPONSIVEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+@media (max-width: 550px) {
+    
+    header{
+        display: none;
+    }
+    .presentacion , .conocimientos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .presentacion{
+        margin-top: 180px;
+        width: 100%;
+    }
+   
+    .hola-soy , .mi-nombre , .descripcion{
+        text-align: center;
+    }
+    .mi-nombre{
+        font-size: 48px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .primer-texto{
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .imagen-der{
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+ /* CONOCIMIENTOS*/
+    .conocimientos{
+        width: 100%;
+        padding: 7px;
+    }
+
+    .titulo-conocimiento{
+        font-size: 40px;
+    }
+    .titulo-lorem{
+        font-size: 18px;
+        display: flex;
+        width: 375px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+    .conocimientos-card{
+        display: flex;
+        flex-direction: row;
+        padding: 80px 0px;
+    }
+    .card{
+        height: 150px;
+        width: 150px;
+        margin: 0 10px;
+    }
+    .caja-top{
+        display: grid;
+    }
+    .titulo-card{
+        font-size: 1em;
+    }
+    .icon-card1 , .icon-card2 , .icon-card3 , .icon-card4 , .icon-card5 , .icon-card6 {
+        font-size: 55px;
+        margin-top: 20px;
+    }
+    
+
+/* VIOLETA*/
+    .parrafo-comillas{
+        font-size: 16px;
+        width: 340px;    
+    }
+    
+/*PROYECTOS*/
+    .proyecto{
+        width: 100%;
+    }
+    .proyecto-1ra{
+        width: 100%;
+        text-align: center;
+    }
+    .titulo-proyecto{    
+        padding-top: 100px;
+    }
+    .p-proyecto{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .proyecto-2da {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        padding-top: 0px;
+
+    }
+    .card-proyecto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+    }
+    .icard-proyecto{
+        height: 290px ;
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0px 0px 0px;
+    }
+    .card-imagen-proyecto{
+        height: 200px ;
+        width: 220px;
+    }
+    .img-proyecto{
+        height: 80%;
+        margin-left: 90px;
+        
+    }
+    .ultima-card-proyecto{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        padding-left: 9px;
+        height: 290px ;
+        width: 99%;
+        margin: 950px 0 0 0;
+    }
+    
+    /*contactame y escribime*/
+    .contactame-escribime{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-contactame-escribime{
+        width: 100%;
+        margin:880px 0 0 0;
+        display: grid;
+        flex-direction: column;
+        border: none;
+        padding-top: 5px;
+    }
+    .card-izq-contactame{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        height: 550px;
+        width: 100%;
+
+    }
+    .titulo-contactame-escribime{
+        font-size: 40px;
+    }
+    .titulo-lorem-flex{
+        height: 240px;
+        width: 100%;
+    }
+    .lorem-card-contactame{
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.4;
+        padding-top: 35px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-padding{
+        margin-top: 25px;
+    }
+    .card-der-escribime{
+        width: 100%;
+    }
+    .escribir , .escribime-formulario{
+        margin: 0;
+    }
+    .escribime-formulario{
+        margin-left: 20px;
+    }
+    .escribir{
+        padding-left: 20px;
+    }
+    .escribime-nombre-apellido{
+        display: grid;
+    }
+    .escribime-apellido {
+        padding-top: 25px;
+    }
+    .caja-nombre-apellido , .caja-email , .caja-msj{
+        width: 320px;
+    }
+    .boton-enviar{
+        margin-left: 20px;
+    }
+
+ /* footer */
+    footer{
+        width: 360px;
+        height: 250px;
+        margin-top: 1150px;
+    }
+    .footer-proyectos{
+        display: none;
+    }
+    .footer-icons{
+        padding-top: 80px;
+        padding-left: 15px;
+    }
+}
