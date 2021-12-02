@@ -7,7 +7,9 @@ body{
     color: #2e2e31;
 }
 
-/* -------------HEADER */
+/* ------------------------------------------------------------
+    HEADER 
+---------------------------------------------------------------*/
 
 
 header{
@@ -78,14 +80,16 @@ a {
     transition: 0.2s;
 }
 
-/* -------------HOLA */
+/* ------------------------------------------------------------
+    SECCION HOLA 
+---------------------------------------------------------------*/
 
 
 .presentacion{
     height: 750px;
     display: flex;
     flex-direction: row;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 .primer-texto{
     display: flex;
@@ -123,7 +127,7 @@ a {
     font-weight: 500;
     text-align: center;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: white;
     text-decoration: none;
 }
@@ -147,7 +151,13 @@ a {
     opacity: 0.9;
     transition: 0.2s;
 }
-/* -------------CONOCIMIENTOS */
+.span-ada{
+    color: blueviolet;
+}
+
+/* ------------------------------------------------------------
+    SECCION CONOCIMIENTOS 
+---------------------------------------------------------------*/
 
 .conocimientos{
     width: 100%;
@@ -168,14 +178,14 @@ a {
 .titulo-conocimiento{
     font-size: 45px;
     font-weight: 900; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     padding-bottom: 43px;
     margin-top: 100px;
     color: black;
 }
 .titulo-lorem{
-    width: 400px;
-    font-family: 'Montserrat', sans-serif;
+    width: 600px;
+    font-family: 'Montserrat Alternates', sans-serif;
     line-height: 1.4;
 }
 .conocimientos-card{
@@ -215,7 +225,7 @@ a {
     font-size: 1.25em;
     font-weight: 700;
     padding-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 .icon-card2{
@@ -247,7 +257,9 @@ a {
     border: 1px solid violet;
 }
 
-/* -------------VIOLETA */
+/* ------------------------------------------------------------
+    SECCION FRASE 
+---------------------------------------------------------------*/
 
 .violeta{
     height: 570px;
@@ -270,7 +282,7 @@ a {
     line-height: 1.5;
     width: 750px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     padding: 60px 0;
 
 }
@@ -278,11 +290,13 @@ a {
     color: white;
     font-size: 27px;
     font-weight: 900px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 
-/* -------------PROYECTOS */
+/* ---------------------------------------------------
+    PROYECTOS 
+---------------------------------------------------*/
 .proyecto{
     display: flex;
     flex-direction: column;
@@ -300,7 +314,7 @@ a {
 .titulo-proyecto{    
     font-size: 44px;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,9 +323,9 @@ a {
     color: black;
 }
 .p-proyecto{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
-    width: 400px;
+    width: 600px;
     text-align: center;
     padding-top: 30px;
     line-height: 1.4;
@@ -360,7 +374,7 @@ a {
     padding-top: 10px;
     font-size: 16px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 .icard-proyecto:hover{
     border: 1px solid violet;
@@ -370,7 +384,9 @@ a {
     border-radius: 10px;
 }
 
-/* CUARTA SECCION CONTACTAME Y ESCRIBIME */ 
+/* ------------------------------------------------------------
+    SECCION CONTACTAME Y ESCRIBIME
+---------------------------------------------------------------*/
 
 .contactame-escribime{
     display: flex;
@@ -409,7 +425,7 @@ a {
 .titulo-contactame-escribime{
     font-size: 45px;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 .lorem-card-contactame{
@@ -417,16 +433,18 @@ a {
     width: 400px;
     line-height: 1.4;
     padding-top: 35px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/*ICONOS*/
+/* ------------------------------------------------------------
+    ICONOS 
+---------------------------------------------------------------*/
 .card-icon{
     width: 490px;
     height: 450px;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     padding-top: 10px;
 }
@@ -472,7 +490,7 @@ a {
 .escribime-nombre-apellido , .email , .mensaje{
     display: flex;
     flex-direction: row;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
@@ -548,7 +566,7 @@ input:invalid:not(:placeholder-shown){
     color: white;
     height: 50px;
     width: 130px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
     border-radius: 100px;
     display: flex;
@@ -565,7 +583,9 @@ input:invalid:not(:placeholder-shown){
     box-shadow: 0px 0px 7px violet;
 }
 
-/* FOOTERRRRRRRRRRRRRRR */
+/* ------------------------------------------------------------
+    FOOTER 
+---------------------------------------------------------------*/
 
 
 footer{
@@ -579,7 +599,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: white;
     padding-top: 80px;
     font-size: 16px;
@@ -611,7 +631,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: white;
     padding-top: 45px;
     font-size: 16px;
@@ -629,7 +649,9 @@ footer{
 
 }
 
-/* RESPONSIVEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+/* ------------------------------------------------------------
+    RESPONSIVE 
+---------------------------------------------------------------*/
 
 @media (max-width: 550px) {
     
