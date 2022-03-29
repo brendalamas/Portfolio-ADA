@@ -287,7 +287,7 @@ header ul li a, .boton-header-contacto{
     font-size: 1.3rem;
     line-height: 1.5;
     text-align: center;
-    width: 60rem;
+    width: 50rem;
 }
 .seccion-quote i, .seccion-quote p, .seccion-quote h1{
     padding-bottom: 4rem;
@@ -318,7 +318,7 @@ header ul li a, .boton-header-contacto{
     font-size: 1.2rem;
     padding-top: 2rem;
     line-height: 1.4;
-    width: 60rem;
+    width: 50rem;
 }
 
 .proyecto-card{
@@ -539,4 +539,134 @@ footer h4{
 .footer-redirec a:hover{
     background-color: var(--color-white);
     color: var(--color-rose);
+}
+
+ /**********************************************
+                   RESPONSIVE 
+ ***********************************************/
+
+@media screen and (max-width: 1024px){
+    .contacto-titulo p{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .proyecto-titulo p, .seccion-quote p, .conocimientos-titulo p{
+        width: 30rem;
+    }
+    .contacto-titulo p{
+        width: 15rem;
+    }
+    .section-presentacion{
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .presentacion-texto h5{
+        font-weight: 300;
+    }
+    .presentacion-img{
+        margin-top: 4rem;
+    }
+    .seccion-conocimientos{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 425px){
+    header ul{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+    header ul li{
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .section-presentacion{
+        padding-top: 16rem;
+    }
+
+    .presentacion-img img{
+        width: 15rem;
+    }
+    .proyecto-titulo p, .seccion-quote p{
+        width: 20rem;
+    }
+
+    .card-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-redirec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-formulario, .card-contacto{
+        width: 100%;
+    }
+    .card-formulario{
+        margin-top: 5rem;
+    }
+    form, .card-formulario, label, input, .form-email, .form-mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    label{
+        margin-top: 1rem;
+    }
+    .form-nombre-apellido, .form-email, .form-mensaje{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .conocimientos-titulo h2,    .conocimientos-titulo p{
+        width: 22rem;
+    } 
+    
+}
+@media screen and (max-width: 375px){
+    .seccion-quote h1, .contacto-titulo h3, .card-formulario h3{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .conocimientos-titulo h2, .conocimientos-titulo p, .seccion-quote p, .proyecto-card a{
+        width:18rem;
+    }
+    .seccion-quote h1{
+        text-align: center;
+    }
+    .conocimientos-titulo h2, .conocimientos-titulo h2, .proyecto-titulo h3{
+        font-size: 2.2rem;
+    }
+    .contacto-titulo h3{
+        font-size: 2rem;
+    }
+    .contacto-titulo p {
+        width: 13rem;
+    }
+    input{
+        font-size: 0.7rem;
+    }
+    .proyecto-img{
+        width: 15rem;
+    }
+    .contacto-redes a{
+        font-size: 0.9rem;
+    }
+    .card-center{
+        padding: 1rem;
+    }
+    .proyecto-card a, .card{
+        margin: 1rem 0 1rem 0;
+    }
+    .presentacion-texto h5{
+        text-align: center;
+    }
+    .presentacion-texto h1{
+        margin-bottom: 1rem;
+    }
 }
