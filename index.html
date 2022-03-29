@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Brenda Lamas </title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap');
@@ -14,261 +14,229 @@
     </script>
 </head>
 <body>
-    
-    <!-- HEADER -->
-
+    <!---------------------------------------------------
+        HEADER
+    ------------------------------------------------------> 
     <header>
         <ul>
-            <li class="botonheader"> <a href="#section-hola" class="boton-efecto"> HOLA </a></li>
-            <li class="botonheader"> <a href="#section-conocimiento" class="boton-efecto" > CONOCIMIENTOS </a></li>
-            <li class="botonheader"> <a href="#section-proyecto" class="boton-efecto"> PROYECTO </a> </li>
-            <li > <a href="#section-contacto" class="boton" > CONTACTO </a> </li>
+            <li> <a href="#"> HOLA </a></li>
+            <li> <a href="#section-conocimiento" > CONOCIMIENTOS </a></li>
+            <li> <a href="#section-proyecto"> PROYECTO </a> </li>
+            <li> <a href="#section-contacto" class="boton-header-contacto" > CONTACTO </a> </li>
         </ul>
     </header>
 
     <!---------------------------------------------------
-            SECCION "HOLA"
+        PRESENTACION
     ------------------------------------------------------>  
-
-    <section class="presentacion">
-        <a name="section-hola"> </a>
-        <div class="primer-texto">
-            <p class="hola-soy">¡Hola! Soy</p>
-            <div class="mi-nombre">Brenda A. Lamas</div>
-            <p class="descripcion">
-                Desarrolladora Frontend, Estudiante de medicina nuclear, con mente curiosa y amante del cafe
-            </p>
-            <a class="boton-lo-que-hago" href="#section-proyecto"> LO QUE HAGO </a>            
+    <section class="section-presentacion">
+        <div class="presentacion">
+            <div class="presentacion-texto"> 
+                <h4>¡Hola! Soy</h4>
+                <h1> Brenda Lamas </h1>
+                <h5> Desarrolladora Frontend. </h5>
+                <h5> Empece a codear en el 2020 y desde ahí que no paro... </h5>
+                <h5> Amante del café </h5>
+                
+            </div>
+            <button class="boton-presentacion">
+                <a href="#section-proyecto"> 
+                    LO QUE HAGO 
+                </a>
+                <div class="liquid"></div>
+            </button>         
         </div>
-        <div class="imagen-der">
-            <img class="imagen-bren" src="./imagen/undraw_Mobile_app_re_catg.svg" alt="">
+        <div class="presentacion-img">
+            <img src="./imagen/undraw_mobile_user_re_xta4.svg" alt="">
         </div>
     </section>
     
     <!---------------------------------------------------
-            SECCION CONOCIMIENTOS
+        SECCION CONOCIMIENTOS
     ------------------------------------------------------>  
-
-    <section class="conocimientos">
+    <section class="seccion-conocimientos">
         <a name="section-conocimiento"> </a>
         <div class="conocimientos-titulo">
-            <h2 class="titulo-conocimiento"> Mis conocimientos </h2>
-            <p class="titulo-lorem">
-                Estos son los lenguajes y herramientas que voy aprendiendo, y ejecutando, durante mi cursada en <span class="span-ada"> ADA ITW  </span>.
-            </p>
-            <p class="titulo-lorem">
+            <h2> Mis conocimientos </h2>
+            <p>
+                Estas son las tecnologias que adquiri durante mi trayectoria por <span class="ADAITW"> ADA ITW  </span>.
                 Además, de manera autodidácta, me voy interiorizando en nuevos conocimientos para poder mejorar como programadora.
             </p>
         </div>
         <div class="conocimientos-card">
-            <div class="caja-top">
-                <div class="card">
-                    <div class="icon-card1"> <i class="fab fa-html5"></i></div>
-                    <div class="titulo-card"> HTML 5</div>
-                </div>
-                <div class="card">
-                    <div class="icon-card2"> <i class="fab fa-css3-alt"></i> </div>
-                    <div class="titulo-card"> CCS 3</div>
-                </div>
-                <div class="card">
-                    <div class="icon-card3"> <i class="fab fa-sass"></i> </div>
-                    <div class="titulo-card"> Sass </div>
-                </div>
-                
+            <div class="card">
+                <div class="icon-card1"> <i class="fab fa-html5"></i></div>
+                <div class="titulo-card"> HTML 5</div>
             </div>
-
-            <div class="caja-top">
-                <div class="card">
-                    <div class="icon-card4"> <i class="fab fa-js"></i> </div>
-                    <div class="titulo-card"> JavaScript </div>
-                </div>
-                <div class="card">
-                    <div class="icon-card5"> <i class="fab fa-react"></i> </div>
-                    <div class="titulo-card"> React </div>
-                </div>
-                <div class="card">
-                    <div class="icon-card6"> <i class="fab fa-git-alt"></i> </div>
-                    <div class="titulo-card"> GIT </div>
-                </div>
+            <div class="card">
+                <div class="icon-card2"> <i class="fab fa-css3-alt"></i> </div>
+                <div class="titulo-card"> CCS 3</div>
+            </div>
+            <div class="card">
+                <div class="icon-card3"> <i class="fab fa-sass"></i> </div>
+                <div class="titulo-card"> Sass </div>
             </div>
             
+            <div class="card">
+                <div class="icon-card4"> <i class="fab fa-js"></i> </div>
+                <div class="titulo-card"> JavaScript </div>
+            </div>
+            <div class="card">
+                <div class="icon-card5"> <i class="fab fa-react"></i> </div>
+                <div class="titulo-card"> REACT </div>
+            </div>
+            <div class="card">
+                <div class="icon-card6"> <i class="fab fa-git-alt"></i> </div>
+                <div class="titulo-card"> GIT </div>
+            </div>
+            <div class="card">
+                <div class="imagen-skill"> <img src="https://iconape.com/wp-content/files/aj/349519/svg/bulma-seeklogo.com.svg" alt="bulma"> </div>
+                <div class="titulo-card"> BULMA </div>
+            </div>
+            <div class="card">
+                <div class="imagen-skill"> <img src="http://simpleicon.com/wp-content/uploads/responsive-design.png" alt="responsive-design"> </div>
+                <div class="titulo-card"> RESPONSIVE DESIGN </div>
+            </div>
         </div>
     </section>
 
     <!---------------------------------------------------
-            SECCION FRASE
+            SECCION QUOTE
     ------------------------------------------------------>  
-    <section class="violeta">
-        <div class="comillas">
-            <i class="fas fa-quote-right quote-icon"></i>
-        </div>
-        <div class="parrafo-comillas">
-            <p>
-                Cualquier destino por largo y complicado que sea, consta de un solo momento, y ese momento es cuando el Ser Humano sabe para siempre quién es
-            </p>
-        </div>
-        <h1 class="titulo-comillas"> Jorge Luis Borges</h1>
-        
+    <section class="seccion-quote">
+        <i class="fas fa-quote-right quote-icon"></i>
+        <p>
+            Cualquier destino por largo y complicado que sea, consta 
+            de un solo momento, y ese momento es cuando el Ser Humano sabe para siempre quién es
+        </p>
+        <h1> Jorge Luis Borges</h1>
     </section>
-
 
     <!---------------------------------------------------
         SECCION PROYECTO
     ------------------------------------------------------>  
-
-    <section class="proyecto">
+    <section class="seccion-proyecto">
         <a name="section-proyecto"></a>
-        <div class="proyecto-1ra">
-            <h1 class="titulo-proyecto"> Mis proyectos </h1>
-            <p class="p-proyecto">
-                He aqui algunos de los proyectos en los que estoy trabajando durante mi formación, y otros que fuí concretando por iniciativa personal.
+        <div class="proyecto-titulo">
+            <h3> Mis proyectos </h3>
+            <p>
+                He aqui algunos de los proyectos en los que estoy 
+                trabajando durante mi formación, y otros que fuí 
+                concretando por iniciativa personal.
             </p>
         </div>
-          <!--CARDS IMAGENES PROYECTO -->
-        <div class="proyecto-2da">
-
-            <div class="card-proyecto">
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_Portfolio_re_qwm5.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Portfolio</div>
-                </a>
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_Live_photo_re_4khn.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Generador de memes </div>
-                </a>
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_Artificial_intelligence_re_enpp.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Match 3</div>
-                </a>
-            </div>
-
-            <div class="card-proyecto">
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_credit_card_payment_12va.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Controlador de gastos</div>
-                </a>
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_Booked_re_vtod.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Administrador de reuniones</div>
-                </a>
-                <a href="./index.html" target="_blank" class="icard-proyecto">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_app_data_516s.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Todo app</div>
-                </a>
-            </div>
-        
-            <div class="card-proyecto">
-                <a href="./index.html" target="_blank" class="icard-proyecto ">
-                    <div class="card-imagen-proyecto">
-                        <img  class="img-proyecto" src="./imagen/undraw_video_streaming_yyld.png">
-                    </div>
-                    <div class="titulo-card-imagen-proyecto"> Buscador de películas</div>
-                </a>
-            </div>
+        <div class="proyecto-card">
+            <a href="./index.html" target="_blank">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_portfolio_update_re_jqnp.svg">
+                </div>
+                <h4> Portfolio</h4>
+            </a>
+            <a href="https://github.com/brendalamas/GeneradorDeMemes" target="_blank">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_my_code_snippets_re_4adu.svg">
+                </div>
+                <h4> Generador de memes </h4>
+            </a>
+            <a href="https://github.com/brendalamas/Ahorradas-1" target="_blank">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_credit_card_payments_re_qboh.svg">
+                </div>
+                <h4> Controlador de gastos (AhorrADAs)</h4>
+            </a>
+            <a href="https://github.com/brendalamas/TiendADA-API" target="_blank">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_add_to_cart_re_wrdo.svg">
+                </div>
+                <h4> Buscador Productos (TiendADA)</h4>
+            </a>
+            <a href="https://github.com/brendalamas/TP-react-RickAndMorty" target="_blank" class="icard-proyecto ">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_file_searching_re_3evy.svg">
+                </div>
+                <h4> Buscador Personajes (Rick and Morty)</h4>
+            </a>
+            <a href="https://github.com/brendalamas/LaFamilia" target="_blank" class="icard-proyecto ">
+                <div class="proyecto-img">
+                    <img  src="./imagen/undraw_online_popularity_re_nm0s.svg">
+                </div>
+                <h4> Tienda La Familia</h4>
+            </a>
         </div>
     </section>
     
    <!---------------------------------------------------
-            SECCION CONTACTAME Y ESCRIBIME
+            SECCION CONTACTO
     ------------------------------------------------------>  
 
-    <section class="contactame-escribime">
+    <section class="seccion-contacto">
         <a name="section-contacto"> </a>
-        <div class="card-contactame-escribime">
-            <div class="card-izq-contactame">
-                <div class="titulo-lorem-flex">
-                    <h1 class="titulo-contactame-escribime"> Contactame </h1>
-                    <p class="lorem-card-contactame"> 
-                        Si te parece interesante mi trabajo, aca vas a poder encontrarme para consultas, ideas, propuestas y más!
+        <div class="card-center">
+            <div class="card-contacto">
+                <div class="contacto-titulo">
+                    <h3> Contactame! </h3>
+                    <p>
+                        Si te parece interesante mi trabajo, 
+                        aca vas a poder encontrarme para 
+                        consultas, ideas, propuestas y más!
                     </p>
                 </div>
-                <div class="card-icon">
-                    <div class="card-padding">
-                        <a href="https://twitter.com/" target="blanck" class="card-user">
-                            <i class="fab fa-twitter icon-radius"></i> <span class="user-user">@Lamasbrenda</span> 
-                        </a>
-                    </div>
-                    
-                    <div class="card-padding">
-                        <a href="https://github.com/brendalamas" target="blanck" class="card-user">
-                            <i class="fab fa-github-alt icon-radius"></i> <span class="user-user">LamasBrenda</span> 
-                        </a>
-                    </div>
-                    <div class="card-padding">
-                        <a href="https://www.linkedin.com/in/brenda-lamas/" target="blanck" class="card-user">
-                            <i class="fab fa-linkedin-in icon-radius"></i> <span class="user-user">lamasbrenda</span> 
-                        </a>
-                    </div>
-                    <div class="card-padding">
-                        <a href="https://mail.google.com/" target="blanck" class="card-user">
-                            <i class="fas fa-envelope icon-radius"></i> <span class="user-user">lamasbrenda@gmail.com</span> 
-                        </a>
-                    </div>
-                    
+                <div class="contacto-redes">
+                    <a href="https://github.com/brendalamas" target="blanck">
+                        <i class="fab fa-github-alt "></i> 
+                        <span>LamasBrenda</span> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/brenda-lamas/" target="blanck">
+                        <i class="fab fa-linkedin-in "></i> 
+                        <span>lamasbrenda</span> 
+                    </a>
+                    <a href="https://mail.google.com/" target="blanck">
+                        <i class="fas fa-envelope "></i> 
+                        <span>lamasbrenda@gmail.com</span> 
+                    </a>                    
                 </div>
             </div>
-
-            <!---------------------------------------------------
-                TARJETA FORMULARIO
-            ------------------------------------------------------>  
-            <div class="card-der-escribime">
-                <div >
-                    <h1 class="titulo-contactame-escribime escribir"> Escribime </h1>
-                </div>
-                <form class="escribime-formulario">
-                    <div class="escribime-nombre-apellido">
-                        <div class="escribime-nombre">
+    
+            <div class="card-formulario">
+                <h3> Escribime </h3>
+                <form>
+                    <div class="form-nombre-apellido">
+                        <div class="form-input">
                             <label for="nombre"> Nombre * </label>
-                            <input type="text" name="nombre" id="nombre"
-                            class="caja-nombre-apellido"
+                            <input type="text" name="nombre"
                             placeholder="p. ej.: Brenda" 
-                            autocomplete="off"
                             enable
                             required>
                         </div>
-                        <div class="escribime-apellido"> 
+                        <div class="form-input"> 
                             <label for="apellido"> Apellido *</label>
-                            <input type="text" name="apellido" id="apellido"
-                            class="caja-nombre-apellido" 
+                            <input type="text" name="apellido"
                             placeholder="p. ej.: Lamas"
-                            autocomplete="off"
                             enable 
                             required>
                         </div>
                     </div>
-                    <div class="email"> 
+                    <div class="form-email"> 
                         <label for="email"> Email *</label> 
-                        <input type="email" name="Email" id="email"
-                            class="caja-email" 
-                            placeholder="p. ej.: brenn.lamas@gmail.com"
-                            autocomplete="off" 
-                            required>
+                        <input type="email" name="email"
+                        placeholder="p. ej.: brenn.lamas@gmail.com"
+                        required>
                     </div>
-                    <div class="mensaje">
+                    <div class="form-mensaje">
                         <label for="mensaje"> Mensaje *</label>
                         <textarea  
-                             name="mensaje" id="mensaje" cols="30" rows="10"
-                             placeholder="Escriba un mensaje aquí" 
-                             class="caja-msj"
-                             required
+                                name="mensaje" cols="30" rows="10"
+                                placeholder="Escriba un mensaje aquí" 
+                                required
                         ></textarea>
                     </div>
                 </form>
-                <a href="#" class="boton-enviar">
-                    Enviar
-                </a>
+                <button>
+                    <a href="#">
+                        Enviar
+                    </a>
+                    <div class="liquid"></div>
+                </button>
             </div>
         </div>
     </section>
@@ -277,19 +245,24 @@
             FOOTER
     ----------------------------------------------------->  
     <footer>
-        <div class="footer-proyectos">
-            <a href="#section-hola" class="footer-proyectos-margin"> HOLA </a>
-            <a href="#section-conocimiento" class="footer-proyectos-margin"> CONOCIMIENTOS</a>
-            <a href="#section-proyecto" class="footer-proyectos-margin"> PROYECTOS</a>
-            <a href="#section-contacto" class="footer-proyectos-margin"> CONTACTO</a>
+        <div class="footer-redirec">
+            <a href="#"> HOLA </a>
+            <a href="#section-conocimiento"> CONOCIMIENTOS</a>
+            <a href="#section-proyecto"> PROYECTOS</a>
+            <a href="#section-contacto"> CONTACTO</a>
         </div>
         <div class="footer-icons">
-            <a href="#section-hola" class="footer-icon-radius"> <i class="fab fa-twitter"></i> </a>
-            <a href="#section-hola" class="footer-icon-radius"> <i class="fab fa-github-alt"></i> </a>
-            <a href="#section-hola" class="footer-icon-radius"><i class="fab fa-linkedin-in"></i> </a>
-            <a href="#section-hola" class="footer-icon-radius"><i class="fas fa-envelope"></i> </a>
+            <a href="https://github.com/brendalamas" target="blank"> 
+                <i class="fab fa-github-alt"></i> 
+            </a>
+            <a href="https://www.linkedin.com/in/brenda-lamas-597b79145/" target="blank">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="blank">
+                <i class="fas fa-envelope"></i> 
+            </a>
         </div>
-        <div class="footer-love"> Hecho con ❤️ por Brenda Lamas  </div>
+        <h4> Hecho con ❤️ por Brenda Lamas </h4>
     </footer>
 </body>
 </html>

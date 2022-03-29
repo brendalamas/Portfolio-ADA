@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-white: #ffffff;
+    --color-rose:#FFB0BC;
+    --color-rose-light:#FFC2A2;
+    --color-black:#111111;
+}
+body{
+    background: #FFAFBD;
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+}
+/* boton animado */
+button {
+    position: relative;
+    padding: 19px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+}
+   
+button a {
+position: relative;
+color: var(--color-rose);
+font-family: Arial;
+letter-spacing: 8px;
+z-index: 1;
+}
+
+button .liquid {
+position: absolute;
+top: -80px;
+left: 0;
+width: 100%;
+height: 200px;
+background: #FFC2A1;
+box-shadow: inset 0 0 50px #ffffff;
+transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+content: '';
+width: 200%;
+height: 200%;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -75%);
+background: #ffffff;
+}
+
+button .liquid::before {
+border-radius: 45%;
+background: #ffffff;
+animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+border-radius: 40%;
+background: #ffffff;
+animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+top: -120px;
+}
+
+@keyframes animate {
+0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+}
+
+100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+}
+}
+/* ------------------------------------------------------------
+    HEADER
+---------------------------------------------------------------*/
+header{
+    position: fixed;
+    width: 100vw;
+    padding: 0.9rem 0.3rem;
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+    box-shadow: 0 0 29px 0 rgba(102, 47, 47, 0.25);
+}
+header ul{
+    display: flex;
+    justify-content: end;
+    padding: 1.2rem 4.2rem;
+    list-style: none;
+}
+header ul li{
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2.4rem;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+header ul li a, .boton-header-contacto{
+    border-radius: 30px;
+    padding: 0.6rem 1.5rem;
+}
+.boton-header-contacto, header ul li a:hover {
+    background-color: var(--color-white);
+    color: var(--color-rose);
+}
+.header ul li a:focus,.boton-header-contacto:focus{
+    box-shadow: 0px 0px 7px var(--color-white);
+    border-radius: 80px;
+}
+.boton-header-contacto:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+/* ------------------------------------------------------------
+    SECCION PRESENTACION 
+---------------------------------------------------------------*/
+.section-presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 10rem 0 8rem 0;
+    width: 100%;
+    color: var(--color-white);
+}
+.presentacion{
+    width: 50%;
+}
+.presentacion-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.presentacion-texto h4{
+    font-size: 1.7rem;
+}
+.presentacion-texto h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.presentacion-texto h5{
+    font-size: 1rem;
+}
+.boton-presentacion{
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-rose);
+    margin-top: 2.5rem;
+    border-radius: 5rem;
+    padding:1rem;
+    border: 1px solid transparent;
+}
+.boton-presentacion a{
+    text-decoration: none;
+}
+.presentacion-img{
+    display: flex;
+    justify-content: center;
+}
+.presentacion-img img{
+    width: 30rem;
+}
+.boton-presentacion:focus{
+    box-shadow: 0px 0px 7px var(--color-rose);
+    border-radius: 80px;
+}
+.boton-presentacion:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+/* ------------------------------------------------------------
+    SECCION CONOCIMIENTOS 
+---------------------------------------------------------------*/
+
+.seccion-conocimientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--color-white);
+}
+.conocimientos-titulo{
+    text-align: center;
+}
+.conocimientos-titulo h2{
+    font-size: 2.5rem;
+    font-weight: 900; 
+    padding-bottom: 1.5rem;
+}
+.conocimientos-titulo p{
+    width: 50rem;
+    line-height: 1.4;
+}
+.conocimientos-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    border: 1px solid #dddfe5;
+    color: var(--color-white);
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.titulo-card{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    text-align: center;
+}
+.icon-card1, .icon-card2, .icon-card3, .icon-card4, 
+.icon-card5, .icon-card6{
+    margin-bottom: 1rem;
+    font-size: 6rem;
+}
+.icon-card1{
+    color: #E54D26;
+}
+.icon-card2{
+    color: #3D8FC6;
+}
+.icon-card3{
+    color: #CC6699;
+}
+.icon-card4{
+    color: #F0DB4F;
+}
+.icon-card5{
+    color: #64DBFB;
+}
+.icon-card6{
+    color: #F34F29;
+}
+.card:hover, .proyecto-card a:hover{
+    border: 1px solid var(--color-white);
+    cursor: pointer;
+    background-color: var(--color-white);
+    opacity: 0.9;
+    color: var(--color-rose-light);
+}
+.card .imagen-skill img {
+    width: 10rem;
+}
+
+/* ------------------------------------------------------------
+    SECCION QUOTE 
+---------------------------------------------------------------*/
+
+.seccion-quote{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.seccion-quote i{
+    font-size: 5rem;
+}
+.seccion-quote p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 60rem;
+}
+.seccion-quote i, .seccion-quote p, .seccion-quote h1{
+    padding-bottom: 4rem;
+}
+.seccion-quote h1{
+    font-size: 2.5rem;
+}
+
+/* ---------------------------------------------------
+    SECCION PROYECTO
+---------------------------------------------------*/
+.seccion-proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 5rem 0rem 5rem 0rem;
+    color: var(--color-white);
+}
+.proyecto-titulo{
+    text-align: center;
+}
+.proyecto-titulo h3{    
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.proyecto-titulo p{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    line-height: 1.4;
+    width: 60rem;
+}
+
+.proyecto-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.proyecto-card a{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.proyecto-img{
+    width: 20rem;
+    height: 90%;
+}
+.proyecto-img, .proyecto-card a h4{
+    margin-bottom: 1rem;
+}
+.proyecto-img img{    
+    width: 90%;
+}
+.proyecto-card a h4{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------
+    SECCION CONTACTO
+---------------------------------------------------------------*/
+
+.seccion-contacto{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 5rem 0rem 5rem 0rem;
+}
+.card-center{
+    display: flex;
+    width: 80%;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: transparent;
+}
+.card-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contacto-titulo h3, .card-formulario h3{
+    font-size: 2.5rem;
+}
+.contacto-titulo p{
+    font-size: 1.2rem;
+    width: 32rem;
+    margin:1rem 0 1rem 0;
+}
+
+.contacto-redes{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-redes a{
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.contacto-redes a, .contacto-redes a i{
+    color: var(--color-white);
+}
+.contacto-redes a i{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+}
+.contacto-redes a:hover{
+    background-color: var(--color-white);
+    color: var(--color-rose-light);
+    width: 18rem;
+    border-radius: 4rem;
+}
+.card-formulario{
+    width: 50%;
+}
+.form-nombre-apellido{
+    display: flex;
+}
+.form-email, .form-mensaje{
+    display: flex;
+    flex-direction: column;
+}
+.form-nombre-apellido, .form-email, .form-mensaje{
+    margin-top: 2rem;
+}
+.form-input label, .form-email label, 
+.form-mensaje label{
+    font-weight: 600;
+}
+.form-input input, .form-email input, 
+.form-mensaje textarea{
+    background-color: #F6F7FB;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+input , textarea{
+    font-size: 1rem;
+    outline: none;
+    margin-top: 0.7rem;
+}
+
+/* VALIDACION */
+input:focus , textarea:focus{
+    box-shadow: 0px 0px 7px var(--color-rose);
+}
+input:valid:focus , textarea:valid:focus{
+  box-shadow: 0px 0px 5px #88c459;
+}
+input:valid , textarea:valid {
+    border: 1px solid #88c459;
+}
+input:focus , textarea:focus {
+    box-shadow: 0px 0px 7px var(--color-rose);
+}
+input:valid:focus , textarea:valid:focus{
+    box-shadow: 0px 0px 5px #88c459;
+}
+input:invalid:not(:placeholder-shown):focus{
+    box-shadow: 0px 0px 5px #f5414f;
+}
+input:invalid:not(:placeholder-shown){
+    border: 1px solid #f5414f;
+}
+
+/* BOTON ENVIAR */
+.card-formulario button{
+    border: none;
+    border-radius: 1.3rem;
+    background-color: var(--color-rose);
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+}
+.card-formulario button a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.card-formulario button:hover{
+    opacity: 0.9;
+}
+.card-formulario button:focus{
+    box-shadow: 0px 0px 7px var(--color-rose);
+}
+
+/* ------------------------------------------------------------
+    FOOTER 
+---------------------------------------------------------------*/
+
+
+footer{
+    color: var(--color-rose);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 5rem 0rem 5rem 0rem;
+}
+.footer-redirec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+}
+.footer-redirec a{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+.footer-icons a i{
+    background-color: var(--color-white);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--color-rose);
+    padding: 1rem;
+}
+.footer-icons a i, .footer-redirec a{
+    margin-right: 2rem;
+}
+footer h4{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.footer-icons a i:hover{
+    background-color: var(--color-rose-light);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+.footer-redirec a:hover{
+    background-color: var(--color-white);
+    color: var(--color-rose);
+}
