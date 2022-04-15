@@ -86,6 +86,7 @@ top: -120px;
 ---------------------------------------------------------------*/
 header{
     position: fixed;
+    z-index: 100;
     width: 100vw;
     padding: 0.9rem 0.3rem;
     background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
@@ -165,6 +166,7 @@ header ul li a, .boton-header-contacto{
     border-radius: 5rem;
     padding:1rem;
     border: 1px solid transparent;
+    position: absolute;
 }
 .boton-presentacion a{
     text-decoration: none;
@@ -263,6 +265,7 @@ header ul li a, .boton-header-contacto{
     background-color: var(--color-white);
     opacity: 0.9;
     color: var(--color-rose-light);
+    position: static;
 }
 .card .imagen-skill img {
     width: 10rem;
