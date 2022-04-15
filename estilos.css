@@ -331,7 +331,7 @@ header ul li a, .boton-header-contacto{
     margin-top: 2.5rem;
 }
 
-.proyecto-card a{
+.proyecto-card .link-proyecto, .proyectos-personales{
     display: flex;
     flex-direction: column;
     width: 20rem;
@@ -347,14 +347,68 @@ header ul li a, .boton-header-contacto{
     width: 20rem;
     height: 90%;
 }
-.proyecto-img, .proyecto-card a h4{
+.proyecto-img, .proyecto-card .link-proyecto h4{
     margin-bottom: 1rem;
 }
 .proyecto-img img{    
     width: 90%;
 }
-.proyecto-card a h4{
+.proyecto-card .link-proyecto h4{
     text-align: center;
+}
+.proyectos-personales button{
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: .5rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: var(--color-white);
+    font-weight: 800;
+    cursor: pointer;
+}
+.proyectos-personales button:hover{
+    background-color: var(--color-white);
+    color: var(--color-rose);
+}
+
+.proyectos-personales-modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fd686841;
+    display: none;
+}
+.proyectos-personales-contenedor{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #FEA2A2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem ;
+}
+.proyectos-personales-contenedor a{
+    color:var(--color-white);
+    text-decoration-line: none;
+}
+.proyecto-personal {
+    width: 90%;
+    list-style: none;
+}
+.proyecto-personal li:hover{
+    padding: .5rem;
+    border-radius: 1rem;    
+}
+#cerrar-proyectos-personales{
+    cursor: pointer;
+    padding: .5rem;
+    margin-top: 1rem;
 }
 
 /* ------------------------------------------------------------

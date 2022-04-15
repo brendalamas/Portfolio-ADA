@@ -127,42 +127,57 @@
             </p>
         </div>
         <div class="proyecto-card">
-            <a href="./index.html" target="_blank">
+            <a href="./index.html" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
-                    <img  src="./imagen/undraw_portfolio_update_re_jqnp.svg">
+                    <img  src="./imagen/undraw_portfolio_update_re_jqnp.svg" class="link-proyecto">
                 </div>
                 <h4> Portfolio</h4>
             </a>
-            <a href="https://github.com/brendalamas/GeneradorDeMemes" target="_blank">
+            <a href="https://github.com/brendalamas/GeneradorDeMemes" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
                     <img  src="./imagen/undraw_my_code_snippets_re_4adu.svg">
                 </div>
                 <h4> Generador de memes </h4>
             </a>
-            <a href="https://github.com/brendalamas/Ahorradas-1" target="_blank">
+            <a href="https://github.com/brendalamas/Ahorradas-1" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
                     <img  src="./imagen/undraw_credit_card_payments_re_qboh.svg">
                 </div>
                 <h4> Controlador de gastos (AhorrADAs)</h4>
             </a>
-            <a href="https://github.com/brendalamas/TiendADA-API" target="_blank">
+            <a href="https://github.com/brendalamas/TiendADA-API" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
                     <img  src="./imagen/undraw_add_to_cart_re_wrdo.svg">
                 </div>
                 <h4> Buscador Productos (TiendADA)</h4>
             </a>
-            <a href="https://github.com/brendalamas/TP-react-RickAndMorty" target="_blank" class="icard-proyecto ">
+            <a href="https://github.com/brendalamas/TP-react-RickAndMorty" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
                     <img  src="./imagen/undraw_file_searching_re_3evy.svg">
                 </div>
-                <h4> Buscador Personajes (Rick and Morty)</h4>
+                <h4> Buscador Rick and Morty</h4>
             </a>
-            <a href="https://github.com/brendalamas/LaFamilia" target="_blank" class="icard-proyecto ">
+            <a href="https://github.com/brendalamas/BuscadorDePeliculas" target="_blank" class="link-proyecto">
                 <div class="proyecto-img">
-                    <img  src="./imagen/undraw_online_popularity_re_nm0s.svg">
+                    <img  src="./imagen/undraw_horror_movie_3988.svg">
                 </div>
-                <h4> Tienda La Familia</h4>
+                <h4> Buscador de Peliculas y Series</h4>
             </a>
+            <div class="proyectos-personales">
+                <img  src="./imagen/undraw_online_popularity_re_nm0s.svg">
+                <button id="personal">Proyectos Personales</button>
+            </div>
+            <div class="proyectos-personales-modal">
+                <ul class="proyectos-personales-contenedor">
+                  <a class="proyecto-personal" href="https://github.com/brendalamas/LaFamilia">
+                    <li> <i class="fa-solid fa-cart-shopping"></i> Pañalera La Familia </li>
+                  </a>
+                  <button id="cerrar-proyectos-personales" aria-label="Boton cerrar">
+                    Atrás
+                </button>
+                </ul>
+            </div>
+            
         </div>
     </section>
     
@@ -265,5 +280,6 @@
         </div>
         <h4> Hecho con ❤️ por Brenda Lamas </h4>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
