@@ -390,25 +390,32 @@ header ul li a, .boton-header-contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem ;
 }
 .proyectos-personales-contenedor a{
     color:var(--color-white);
     text-decoration-line: none;
 }
-.proyecto-personal {
-    width: 90%;
-    list-style: none;
-}
-.proyecto-personal li:hover{
-    padding: .5rem;
-    border-radius: 1rem;    
-}
+
 #cerrar-proyectos-personales{
     cursor: pointer;
     padding: .5rem;
     margin-top: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--color-rose);
+    background-color: var(--color-white);
+}
+#proyecto-personal img{
+    width: 100%;
+}
+#proyecto-personal li{
+    text-align: center;
+    list-style: none;
+}
+#proyecto-personal:hover{
+    border-radius: 1rem;
+    padding: .1rem;
 }
 
 /* ------------------------------------------------------------
